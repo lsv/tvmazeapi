@@ -1,6 +1,10 @@
-TV Maze API &ndash; [![Build Status](https://travis-ci.org/lsv/rejseplan-php-api.svg?branch=master)](https://travis-ci.org/lsv/rejseplan-php-api) [![codecov](https://codecov.io/gh/lsv/rejseplan-php-api/branch/master/graph/badge.svg)](https://codecov.io/gh/lsv/rejseplan-php-api) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/babcfce8-7f31-45b4-999f-b78f7ab56960/mini.png)](https://insight.sensiolabs.com/projects/babcfce8-7f31-45b4-999f-b78f7ab56960) [![StyleCI](https://styleci.io/repos/67995566/shield)](https://styleci.io/repos/67995566)
+TV Maze API
+===========
 
-=================
+[![Build Status](https://travis-ci.org/lsv/tvmazeapi.svg?branch=master)](https://travis-ci.org/lsv/tvmazeapi)
+[![codecov](https://codecov.io/gh/lsv/tvmazeapi/branch/master/graph/badge.svg)](https://codecov.io/gh/lsv/tvmazeapi)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/897d3d4f-5e8a-4e12-af82-63926d290945/mini.png)](https://insight.sensiolabs.com/projects/897d3d4f-5e8a-4e12-af82-63926d290945)
+[![StyleCI](https://styleci.io/repos/76379059/shield?branch=master)](https://styleci.io/repos/76379059)
 
 PHP wrapper for tvmaze.com API
 
