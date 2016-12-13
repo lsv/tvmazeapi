@@ -1,0 +1,76 @@
+{
+  "id": 8167,
+  "url": "http://www.tvmaze.com/shows/8167/designated-survivor",
+  "name": "Designated Survivor",
+  "type": "Scripted",
+  "language": "English",
+  "genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "status": "Running",
+  "runtime": 60,
+  "premiered": "2016-09-21",
+  "schedule": {
+    "time": "22:00",
+    "days": [
+      "Wednesday"
+    ]
+  },
+  "rating": {
+    "average": 8.2
+  },
+  "weight": 34,
+  "network": {
+    "id": 3,
+    "name": "ABC",
+    "country": {
+      "name": "United States",
+      "code": "US",
+      "timezone": "America/New_York"
+    }
+  },
+  "webChannel": null,
+  "externals": {
+    "tvrage": null,
+    "thetvdb": 311876,
+    "imdb": "tt5296406"
+  },
+  "image": {
+    "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/65/164877.jpg",
+    "original": "http://tvmazecdn.com/uploads/images/original_untouched/65/164877.jpg"
+  },
+  "summary": "<p>Kiefer Sutherland stars as Tom Kirkman, a lower-level cabinet member who is suddenly appointed President of the United States after a catastrophic attack on the US Capitol during the State of the Union, on the highly anticipated series <strong>Designated Survivor</strong>. In this dramatic thriller, Kirkman will struggle to keep the country and his own family from falling apart, while navigating the highly-volatile political arena and while leading the search to find who is responsible for the attack. </p>",
+  "updated": 1481330720,
+  "_links": {
+    "self": {
+      "href": "http://api.tvmaze.com/shows/8167"
+    },
+    "previousepisode": {
+      "href": "http://api.tvmaze.com/episodes/985518"
+    },
+    "nextepisode": {
+      "href": "http://api.tvmaze.com/episodes/995806"
+    }
+  },
+  "_embedded": {
+    "nextepisode": {
+      "id": 995806,
+      "url": "http://www.tvmaze.com/episodes/995806/designated-survivor-1x10-the-oath",
+      "name": "The Oath",
+      "season": 1,
+      "number": 10,
+      "airdate": "2016-12-14",
+      "airtime": "22:00",
+      "airstamp": "2016-12-14T22:00:00-05:00",
+      "runtime": 60,
+      "image": null,
+      "summary": "<p>President Kirkman fears there could be a traitor in the White House when he discovers shocking information connected to the Capitol Bombing. Confiding in Emily, Kirkman puts her in charge of quietly investigating. Meanwhile, new information surfaces about Congressman MacLeish, raising concerns regarding his vice presidential nomination.</p>",
+      "_links": {
+        "self": {
+          "href": "http://api.tvmaze.com/episodes/995806"
+        }
+      }
+    }
+  }
+}

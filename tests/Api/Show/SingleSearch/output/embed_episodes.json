@@ -1,0 +1,267 @@
+{
+  "id": 8167,
+  "url": "http://www.tvmaze.com/shows/8167/designated-survivor",
+  "name": "Designated Survivor",
+  "type": "Scripted",
+  "language": "English",
+  "genres": [
+    "Drama",
+    "Thriller"
+  ],
+  "status": "Running",
+  "runtime": 60,
+  "premiered": "2016-09-21",
+  "schedule": {
+    "time": "22:00",
+    "days": [
+      "Wednesday"
+    ]
+  },
+  "rating": {
+    "average": 8.2
+  },
+  "weight": 34,
+  "network": {
+    "id": 3,
+    "name": "ABC",
+    "country": {
+      "name": "United States",
+      "code": "US",
+      "timezone": "America/New_York"
+    }
+  },
+  "webChannel": null,
+  "externals": {
+    "tvrage": null,
+    "thetvdb": 311876,
+    "imdb": "tt5296406"
+  },
+  "image": {
+    "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/65/164877.jpg",
+    "original": "http://tvmazecdn.com/uploads/images/original_untouched/65/164877.jpg"
+  },
+  "summary": "<p>Kiefer Sutherland stars as Tom Kirkman, a lower-level cabinet member who is suddenly appointed President of the United States after a catastrophic attack on the US Capitol during the State of the Union, on the highly anticipated series <strong>Designated Survivor</strong>. In this dramatic thriller, Kirkman will struggle to keep the country and his own family from falling apart, while navigating the highly-volatile political arena and while leading the search to find who is responsible for the attack. </p>",
+  "updated": 1481330720,
+  "_links": {
+    "self": {
+      "href": "http://api.tvmaze.com/shows/8167"
+    },
+    "previousepisode": {
+      "href": "http://api.tvmaze.com/episodes/985518"
+    },
+    "nextepisode": {
+      "href": "http://api.tvmaze.com/episodes/995806"
+    }
+  },
+  "_embedded": {
+    "episodes": [
+      {
+        "id": 848212,
+        "url": "http://www.tvmaze.com/episodes/848212/designated-survivor-1x01-pilot",
+        "name": "Pilot",
+        "season": 1,
+        "number": 1,
+        "airdate": "2016-09-21",
+        "airtime": "22:00",
+        "airstamp": "2016-09-21T22:00:00-04:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/76/190262.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/76/190262.jpg"
+        },
+        "summary": "<p>Tom Kirkman, a lower-level cabinet member, is suddenly appointed President of the United States after a catastrophic attack on the U.S. Capitol during the State of the Union.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/848212"
+          }
+        }
+      },
+      {
+        "id": 892055,
+        "url": "http://www.tvmaze.com/episodes/892055/designated-survivor-1x02-the-first-day",
+        "name": "The First Day",
+        "season": 1,
+        "number": 2,
+        "airdate": "2016-09-28",
+        "airtime": "22:00",
+        "airstamp": "2016-09-28T22:00:00-04:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/77/193185.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/77/193185.jpg"
+        },
+        "summary": "<p>Hours after the attack on the Capitol, President Kirkman steps into his role as Commander-in-Chief in the midst of chaos and confusion. Facing dangerous new challenges and adversaries, Kirman struggles to hold a country together that is on the brink of falling apart. </p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/892055"
+          }
+        }
+      },
+      {
+        "id": 892057,
+        "url": "http://www.tvmaze.com/episodes/892057/designated-survivor-1x03-the-confession",
+        "name": "The Confession",
+        "season": 1,
+        "number": 3,
+        "airdate": "2016-10-05",
+        "airtime": "22:00",
+        "airstamp": "2016-10-05T22:00:00-04:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/78/196536.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/78/196536.jpg"
+        },
+        "summary": "<p>President Kirkman and his staff work to keep a high-level security breach of the White House a secret just as he's about to give his first television interview. Meanwhile, the FBI continues to investigate the Capitol bombing, and Agent Hannah Wells starts to develop her own theories about who was really behind the attack.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/892057"
+          }
+        }
+      },
+      {
+        "id": 892058,
+        "url": "http://www.tvmaze.com/episodes/892058/designated-survivor-1x04-the-enemy",
+        "name": "The Enemy",
+        "season": 1,
+        "number": 4,
+        "airdate": "2016-10-12",
+        "airtime": "22:00",
+        "airstamp": "2016-10-12T22:00:00-04:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/79/199655.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/79/199655.jpg"
+        },
+        "summary": "<p>Kirkman learns who is behind the attack and needs to grapple not only with the prospect of war, but brewing domestic troubles as well. Kirkman taps Emily to monitor the domestic situation, while Alex may be in for more than she bargains for when she seeks out help from Hookstraten.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/892058"
+          }
+        }
+      },
+      {
+        "id": 892059,
+        "url": "http://www.tvmaze.com/episodes/892059/designated-survivor-1x05-the-mission",
+        "name": "The Mission",
+        "season": 1,
+        "number": 5,
+        "airdate": "2016-10-26",
+        "airtime": "22:00",
+        "airstamp": "2016-10-26T22:00:00-04:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/82/205582.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/82/205582.jpg"
+        },
+        "summary": "<p>Realizing his attempts at diplomacy with Algeria have failed, President Kirkman makes the difficult decision of sending Navy SEALs on a mission that will define his presidency. Meanwhile, as the investigation into the Capitol bombing continues, Agent Hannah Wells discovers more secrets than answers.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/892059"
+          }
+        }
+      },
+      {
+        "id": 968603,
+        "url": "http://www.tvmaze.com/episodes/968603/designated-survivor-1x06-the-interrogation",
+        "name": "The Interrogation",
+        "season": 1,
+        "number": 6,
+        "airdate": "2016-11-09",
+        "airtime": "22:00",
+        "airstamp": "2016-11-09T22:00:00-05:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/84/210527.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/84/210527.jpg"
+        },
+        "summary": "<p>When shots ring out at The White House during a Governors Summit, President Kirkman's plans at electing a new Congress are thrown into turmoil, while Agent Hannah Wells continues investigating the Capitol bombing and makes one of her most shocking discoveries yet.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/968603"
+          }
+        }
+      },
+      {
+        "id": 968604,
+        "url": "http://www.tvmaze.com/episodes/968604/designated-survivor-1x07-the-traitor",
+        "name": "The Traitor",
+        "season": 1,
+        "number": 7,
+        "airdate": "2016-11-16",
+        "airtime": "22:00",
+        "airstamp": "2016-11-16T22:00:00-05:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/85/212850.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/85/212850.jpg"
+        },
+        "summary": "<p>When an American track-and-field coach heads to Russia, President Kirkman is thrust into a hostage exchange involving the CIA and the Russian government. Meanwhile, Agent Hannah Wells and Deputy Director Atwood's investigation into the Capitol bombing uncovers information that puts Atwood and his family's life at risk.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/968604"
+          }
+        }
+      },
+      {
+        "id": 985515,
+        "url": "http://www.tvmaze.com/episodes/985515/designated-survivor-1x08-the-results",
+        "name": "The Results",
+        "season": 1,
+        "number": 8,
+        "airdate": "2016-11-30",
+        "airtime": "22:00",
+        "airstamp": "2016-11-30T22:00:00-05:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/87/218492.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/87/218492.jpg"
+        },
+        "summary": "<p>On the eve of the country voting to elect a new House of Representatives, an unexpected development forces Kirkman to consider cancelling the elections entirely. Meanwhile, news has leaked about Majid Nassar's death, and Kirkman has to handle the fallout.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/985515"
+          }
+        }
+      },
+      {
+        "id": 985518,
+        "url": "http://www.tvmaze.com/episodes/985518/designated-survivor-1x09-the-blueprint",
+        "name": "The Blueprint",
+        "season": 1,
+        "number": 9,
+        "airdate": "2016-12-07",
+        "airtime": "22:00",
+        "airstamp": "2016-12-07T22:00:00-05:00",
+        "runtime": 60,
+        "image": {
+          "medium": "http://tvmazecdn.com/uploads/images/medium_landscape/88/220582.jpg",
+          "original": "http://tvmazecdn.com/uploads/images/original_untouched/88/220582.jpg"
+        },
+        "summary": "<p>When classified government documents are leaked online, President Kirkman searches for the party responsible only to find that they have taken refuge inside a foreign embassy and are behind even his reach. Meanwhile, Agent Hannah Wells races furiously to gather evidence of MacLeish's involvement in the conspiracy before he can be confirmed as the country's next Vice President.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/985518"
+          }
+        }
+      },
+      {
+        "id": 995806,
+        "url": "http://www.tvmaze.com/episodes/995806/designated-survivor-1x10-the-oath",
+        "name": "The Oath",
+        "season": 1,
+        "number": 10,
+        "airdate": "2016-12-14",
+        "airtime": "22:00",
+        "airstamp": "2016-12-14T22:00:00-05:00",
+        "runtime": 60,
+        "image": null,
+        "summary": "<p>President Kirkman fears there could be a traitor in the White House when he discovers shocking information connected to the Capitol Bombing. Confiding in Emily, Kirkman puts her in charge of quietly investigating. Meanwhile, new information surfaces about Congressman MacLeish, raising concerns regarding his vice presidential nomination.</p>",
+        "_links": {
+          "self": {
+            "href": "http://api.tvmaze.com/episodes/995806"
+          }
+        }
+      }
+    ]
+  }
+}
