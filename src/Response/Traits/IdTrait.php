@@ -1,11 +1,11 @@
 <?php
+
 namespace Lsv\TvmazeApi\Response\Traits;
 
 trait IdTrait
 {
-
     /**
-     * ID
+     * ID.
      *
      * @var int
      */

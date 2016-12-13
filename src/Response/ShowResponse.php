@@ -1,4 +1,5 @@
 <?php
+
 namespace Lsv\TvmazeApi\Response;
 
 use Lsv\TvmazeApi\Response\Traits\IdTrait;
@@ -14,98 +15,98 @@ class ShowResponse extends AbstractResponse
     use ImageTrait;
 
     /**
-     * Type of show
+     * Type of show.
      *
      * @var string
      */
     public $type;
 
     /**
-     * Language
+     * Language.
      *
      * @var string
      */
     public $language;
 
     /**
-     * Genres
+     * Genres.
      *
      * @var array
      */
     public $genres;
 
     /**
-     * Status of show
+     * Status of show.
      *
      * @var string
      */
     public $status;
 
     /**
-     * Runtime
+     * Runtime.
      *
      * @var int
      */
     public $runtime;
 
     /**
-     * Premiere date
+     * Premiere date.
      *
      * @var \DateTime
      */
     public $premiered;
 
     /**
-     * Days the show is running
+     * Days the show is running.
      *
      * @var array
      */
     public $scheduleDays;
 
     /**
-     * Time the show is running
+     * Time the show is running.
      *
      * @var string
      */
     public $scheduleTime;
 
     /**
-     * Rating
+     * Rating.
      *
      * @var float
      */
     public $rating;
 
     /**
-     * Network
+     * Network.
      *
      * @var string
      */
     public $network;
 
     /**
-     * Summary of show
+     * Summary of show.
      *
      * @var string
      */
     public $summary;
 
     /**
-     * Episodes
+     * Episodes.
      *
      * @var EpisodeResponse[]|null
      */
     public $episodes;
 
     /**
-     * Nextepisode
+     * Nextepisode.
      *
      * @var EpisodeResponse|null
      */
     public $nextepisode;
 
     /**
-     * Set premiere date
+     * Set premiere date.
      *
      * @param string $premiered
      */
@@ -115,7 +116,7 @@ class ShowResponse extends AbstractResponse
     }
 
     /**
-     * Set schedule
+     * Set schedule.
      *
      * @param array $schedule
      */
@@ -133,7 +134,7 @@ class ShowResponse extends AbstractResponse
     }
 
     /**
-     * Set rating
+     * Set rating.
      *
      * @param array $rating
      */
@@ -145,7 +146,7 @@ class ShowResponse extends AbstractResponse
     }
 
     /**
-     * Set network
+     * Set network.
      *
      * @param array $network
      */
@@ -156,7 +157,7 @@ class ShowResponse extends AbstractResponse
         }
 
         if (isset($network['country']['code'])) {
-            $this->network .= ' (' . $network['country']['code'] . ')';
+            $this->network .= ' ('.$network['country']['code'].')';
         }
     }
 }

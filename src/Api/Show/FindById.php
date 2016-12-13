@@ -1,4 +1,5 @@
 <?php
+
 namespace Lsv\TvmazeApi\Api\Show;
 
 use Lsv\TvmazeApi\Api\AbstractApi;
@@ -14,7 +15,7 @@ class FindById extends AbstractApi
     use EmbedNextEpisodeTrait;
 
     /**
-     * TV Maze show ID
+     * TV Maze show ID.
      *
      * @param int $id
      */
@@ -24,9 +25,10 @@ class FindById extends AbstractApi
     }
 
     /**
-     * Configure the allowed options
+     * Configure the allowed options.
      *
      * @param OptionsResolver $options
+     *
      * @return void
      */
     protected function configureOptions(OptionsResolver $options)
@@ -36,9 +38,10 @@ class FindById extends AbstractApi
     }
 
     /**
-     * Generate the url from the options
+     * Generate the url from the options.
      *
      * @param array $options
+     *
      * @return string
      */
     protected function getUrl(array $options)
@@ -47,20 +50,22 @@ class FindById extends AbstractApi
     }
 
     /**
-     * Generate reponse from response interface
+     * Generate reponse from response interface.
      *
-     * @param array $options
+     * @param array             $options
      * @param ResponseInterface $response
+     *
      * @return ShowResponse
      */
     protected function generateResponse(array $options, ResponseInterface $response)
     {
         $response = $this->validateJson($response);
+
         return new ShowResponse($response, 'show');
     }
 
     /**
-     * Do the call
+     * Do the call.
      *
      * @return ShowResponse
      */

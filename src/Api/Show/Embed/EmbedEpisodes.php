@@ -1,4 +1,5 @@
 <?php
+
 namespace Lsv\TvmazeApi\Api\Show\Embed;
 
 use Lsv\TvmazeApi\Api\Show\Traits\EmbedEpisodesTrait;
@@ -6,9 +7,8 @@ use Lsv\TvmazeApi\Response\EpisodeResponse;
 
 class EmbedEpisodes implements EmbedInterface
 {
-
     /**
-     * Trait class name
+     * Trait class name.
      *
      * @return string
      */
@@ -18,7 +18,7 @@ class EmbedEpisodes implements EmbedInterface
     }
 
     /**
-     * Resolver key
+     * Resolver key.
      *
      * @return string
      */
@@ -28,7 +28,7 @@ class EmbedEpisodes implements EmbedInterface
     }
 
     /**
-     * Allowed value for resolver
+     * Allowed value for resolver.
      *
      * @return string
      */
@@ -38,7 +38,7 @@ class EmbedEpisodes implements EmbedInterface
     }
 
     /**
-     * Key in response
+     * Key in response.
      *
      * @return string
      */
@@ -48,7 +48,7 @@ class EmbedEpisodes implements EmbedInterface
     }
 
     /**
-     * Is the response an array
+     * Is the response an array.
      *
      * @return bool
      */
@@ -58,7 +58,7 @@ class EmbedEpisodes implements EmbedInterface
     }
 
     /**
-     * Name of the response object
+     * Name of the response object.
      *
      * @return string
      */
@@ -68,7 +68,7 @@ class EmbedEpisodes implements EmbedInterface
     }
 
     /**
-     * Setter name in the response object
+     * Setter name in the response object.
      *
      * @return string
      */

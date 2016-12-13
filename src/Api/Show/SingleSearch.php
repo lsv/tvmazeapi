@@ -1,4 +1,5 @@
 <?php
+
 namespace Lsv\TvmazeApi\Api\Show;
 
 use Lsv\TvmazeApi\Api\Show\Traits\EmbedEpisodesTrait;
@@ -12,9 +13,10 @@ class SingleSearch extends Search
     use EmbedNextEpisodeTrait;
 
     /**
-     * Generate the url from the options
+     * Generate the url from the options.
      *
      * @param array $options
+     *
      * @return string
      */
     protected function getUrl(array $options)
@@ -23,20 +25,22 @@ class SingleSearch extends Search
     }
 
     /**
-     * Generate reponse from response interface
+     * Generate reponse from response interface.
      *
-     * @param array $options
+     * @param array             $options
      * @param ResponseInterface $response
+     *
      * @return ShowResponse
      */
     protected function generateResponse(array $options, ResponseInterface $response)
     {
         $response = $this->validateJson($response);
+
         return new ShowResponse($response, 'show');
     }
 
     /**
-     * Do the call
+     * Do the call.
      *
      * @return ShowResponse
      */
