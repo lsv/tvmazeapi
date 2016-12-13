@@ -1,15 +1,15 @@
 <?php
+
 namespace Lsv\TvmazeApi\Response;
 
 use Lsv\TvmazeApi\Api\Show\Embed\Embeds;
 
 abstract class AbstractResponse
 {
-
     /**
-     * Create response object
+     * Create response object.
      *
-     * @param array|null $response
+     * @param array|null  $response
      * @param string|null $key
      */
     public function __construct(array $response = null, $key = null)
@@ -18,10 +18,11 @@ abstract class AbstractResponse
     }
 
     /**
-     * Generate response
+     * Generate response.
      *
-     * @param array|null $response
+     * @param array|null  $response
      * @param string|null $key
+     *
      * @return void
      */
     protected function createResponse(array $response = null, $key = null)
@@ -49,9 +50,10 @@ abstract class AbstractResponse
     }
 
     /**
-     * Parse embeds
+     * Parse embeds.
      *
      * @param array $response
+     *
      * @return array
      */
     protected function parseEmbeds(array $response)
@@ -85,10 +87,10 @@ abstract class AbstractResponse
     }
 
     /**
-     * Parse embeds if array
+     * Parse embeds if array.
      *
-     * @param array $output
-     * @param array $data
+     * @param array  $output
+     * @param array  $data
      * @param string $responseKey
      * @param string $setter
      * @param string $className
@@ -101,10 +103,10 @@ abstract class AbstractResponse
     }
 
     /**
-     * Parse embeds if not array
+     * Parse embeds if not array.
      *
-     * @param array $output
-     * @param array $data
+     * @param array  $output
+     * @param array  $data
      * @param string $responseKey
      * @param string $setter
      * @param string $className
@@ -118,9 +120,10 @@ abstract class AbstractResponse
     }
 
     /**
-     * Text to date
+     * Text to date.
      *
      * @param string $date
+     *
      * @return \DateTime
      */
     protected function textToDate($date)

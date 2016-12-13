@@ -1,4 +1,5 @@
 <?php
+
 namespace Lsv\TvmazeApi\Api;
 
 use GuzzleHttp\Client;
@@ -12,59 +13,58 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 abstract class AbstractApi implements ApiInterface
 {
-
     /**
-     * Name of the API
+     * Name of the API.
      */
     const API_NAME = '';
 
     /**
-     * Version of the API
+     * Version of the API.
      */
     const API_VERSION = '';
 
     /**
-     * Base url
+     * Base url.
      */
     const API_BASEURL = 'http://api.tvmaze.com/';
 
     /**
-     * HTTP Client
+     * HTTP Client.
      *
      * @var Client|null
      */
     private $client;
 
     /**
-     * HTTP base url
+     * HTTP base url.
      *
      * @var null|string
      */
     private $baseurl;
 
     /**
-     * Url options
+     * Url options.
      *
      * @var array
      */
     protected $options = [];
 
     /**
-     * The request
+     * The request.
      *
      * @var RequestInterface
      */
     private $request;
 
     /**
-     * The response
+     * The response.
      *
      * @var ResponseInterface
      */
     private $response;
 
     /**
-     * Create API request and response
+     * Create API request and response.
      *
      * @param Client|null $client
      * @param string|null $baseurl
@@ -76,7 +76,7 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * Set HTTP client
+     * Set HTTP client.
      *
      * @param Client|null $client
      */
@@ -89,7 +89,7 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * Set HTTP base url
+     * Set HTTP base url.
      *
      * @param null $url
      */
@@ -102,32 +102,35 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * Configure the allowed options
+     * Configure the allowed options.
      *
      * @param OptionsResolver $options
+     *
      * @return void
      */
     abstract protected function configureOptions(OptionsResolver $options);
 
     /**
-     * Generate the url from the options
+     * Generate the url from the options.
      *
      * @param array $options
+     *
      * @return string
      */
     abstract protected function getUrl(array $options);
 
     /**
-     * Generate reponse from response interface
+     * Generate reponse from response interface.
      *
-     * @param array $options
+     * @param array             $options
      * @param ResponseInterface $response
+     *
      * @return mixed
      */
     abstract protected function generateResponse(array $options, ResponseInterface $response);
 
     /**
-     * Resolve options
+     * Resolve options.
      */
     protected function resolveOptions()
     {
@@ -146,7 +149,7 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * Create request
+     * Create request.
      */
     protected function createRequest()
     {
@@ -155,7 +158,7 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * Do the actual API call
+     * Do the actual API call.
      *
      * @return mixed
      */
@@ -168,6 +171,7 @@ abstract class AbstractApi implements ApiInterface
         } catch (GuzzleException $exception) {
             $this->response = new Response($exception->getCode(), [], $exception->getMessage());
         }
+
         return $this->generateResponse($this->options, $this->response);
     }
 
@@ -175,6 +179,7 @@ abstract class AbstractApi implements ApiInterface
      * Validate json.
      *
      * @param ResponseInterface $response
+     *
      * @return array
      */
     protected function validateJson(ResponseInterface $response)
@@ -187,7 +192,7 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * HTTP Method
+     * HTTP Method.
      *
      * @return string
      */
@@ -197,7 +202,7 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * HTTP client headers
+     * HTTP client headers.
      *
      * @return array
      */
@@ -209,13 +214,13 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * Get the request, this will not send the request
+     * Get the request, this will not send the request.
      *
      * @return RequestInterface
      */
     public function getRequest()
     {
-        if (! $this->request) {
+        if (!$this->request) {
             $this->resolveOptions();
             $this->createRequest();
         }
@@ -224,13 +229,13 @@ abstract class AbstractApi implements ApiInterface
     }
 
     /**
-     * Get the response, this will send the request
+     * Get the response, this will send the request.
      *
      * @return ResponseInterface
      */
     public function getResponse()
     {
-        if (! $this->response) {
+        if (!$this->response) {
             $this->doCall();
         }
 

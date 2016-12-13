@@ -1,4 +1,5 @@
 <?php
+
 namespace Lsv\TvmazeApi\Api;
 
 use GuzzleHttp\ClientInterface;
@@ -7,23 +8,22 @@ use Lsv\TvmazeApi\Response\ShowResponse;
 
 class Show
 {
-
     /**
-     * Instance
+     * Instance.
      *
-     * @var $this
+     * @var
      */
     private static $instance;
 
     /**
-     * HTTP client
+     * HTTP client.
      *
      * @var ClientInterface|null
      */
     private $client;
 
     /**
-     * HTTP baseurl
+     * HTTP baseurl.
      *
      * @var string|null
      */
@@ -49,12 +49,12 @@ class Show
     {
     }
 
-
     /**
-     * Get instance
+     * Get instance.
      *
      * @param ClientInterface|null $client
-     * @param string|null $baseUrl
+     * @param string|null          $baseUrl
+     *
      * @return Show
      */
     public static function getInstance(ClientInterface $client = null, $baseUrl = null)
@@ -62,15 +62,17 @@ class Show
         if (self::$instance === null) {
             self::$instance = new self($client, $baseUrl);
         }
+
         return self::$instance;
     }
 
     /**
-     * Find show by ID
+     * Find show by ID.
      *
-     * @param int $id
+     * @param int  $id
      * @param bool $embedEpisodes
      * @param bool $embedNextepisode
+     *
      * @return ShowResponse
      */
     public function findById($id, $embedEpisodes = false, $embedNextepisode = false)
@@ -89,9 +91,10 @@ class Show
     }
 
     /**
-     * Lookup show from tvrage
+     * Lookup show from tvrage.
      *
      * @param string $id
+     *
      * @return ShowResponse
      */
     public function lookupFromTvrage($id)
@@ -100,9 +103,10 @@ class Show
     }
 
     /**
-     * Lookup show thetvdb
+     * Lookup show thetvdb.
      *
      * @param string $id
+     *
      * @return ShowResponse
      */
     public function lookupFromThetvdb($id)
@@ -111,9 +115,10 @@ class Show
     }
 
     /**
-     * Lookup show from imdb
+     * Lookup show from imdb.
      *
      * @param string $id
+     *
      * @return ShowResponse
      */
     public function lookupFromImdb($id)
@@ -122,24 +127,27 @@ class Show
     }
 
     /**
-     * Search for shows
+     * Search for shows.
      *
      * @param string $query
+     *
      * @return ShowResponse[]
      */
     public function search($query)
     {
         $api = new Api\Search($this->client, $this->baseUrl);
         $api->setQuery($query);
+
         return $api->call();
     }
 
     /**
-     * Search for a single show
+     * Search for a single show.
      *
      * @param string $query
-     * @param bool $embedEpisodes
-     * @param bool $embedNextepisode
+     * @param bool   $embedEpisodes
+     * @param bool   $embedNextepisode
+     *
      * @return ShowResponse
      */
     public function singleSearch($query, $embedEpisodes = false, $embedNextepisode = false)
@@ -158,16 +166,18 @@ class Show
     }
 
     /**
-     * Lookup show from other sources
+     * Lookup show from other sources.
      *
      * @param string $site
      * @param string $id
+     *
      * @return ShowResponse
      */
     private function lookup($site, $id)
     {
         $api = new Api\Lookup($this->client, $this->baseUrl);
         $api->setSite($site, $id);
+
         return $api->call();
     }
 }

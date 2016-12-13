@@ -1,4 +1,5 @@
 <?php
+
 namespace Lsv\TvmazeApi\Response;
 
 use Lsv\TvmazeApi\Response\Traits\IdTrait;
@@ -14,49 +15,49 @@ class EpisodeResponse extends AbstractResponse
     use ImageTrait;
 
     /**
-     * Season number
+     * Season number.
      *
      * @var int
      */
     public $season;
 
     /**
-     * Episode number
+     * Episode number.
      *
      * @var int
      */
     public $number;
 
     /**
-     * Episode air date
+     * Episode air date.
      *
      * @var \DateTime
      */
     public $airdate;
 
     /**
-     * Episode air time
+     * Episode air time.
      *
      * @var string
      */
     public $airtime;
 
     /**
-     * Episode runtime
+     * Episode runtime.
      *
      * @var int
      */
     public $runtime;
 
     /**
-     * Episode summary
+     * Episode summary.
      *
      * @var string
      */
     public $summary;
 
     /**
-     * Set air date
+     * Set air date.
      *
      * @param string $airdate
      */

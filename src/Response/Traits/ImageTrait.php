@@ -1,25 +1,25 @@
 <?php
+
 namespace Lsv\TvmazeApi\Response\Traits;
 
 trait ImageTrait
 {
-
     /**
-     * Medium image
+     * Medium image.
      *
      * @var string
      */
     public $mediumImage;
 
     /**
-     * Original image
+     * Original image.
      *
      * @var string
      */
     public $originalImage;
 
     /**
-     * Set images
+     * Set images.
      *
      * @param array|null $image
      */

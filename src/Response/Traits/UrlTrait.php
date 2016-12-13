@@ -1,11 +1,11 @@
 <?php
+
 namespace Lsv\TvmazeApi\Response\Traits;
 
 trait UrlTrait
 {
-
     /**
-     * Url
+     * Url.
      *
      * @var string
      */

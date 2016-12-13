@@ -1,4 +1,5 @@
 <?php
+
 namespace Lsv\TvmazeApi\Api\Show;
 
 use Lsv\TvmazeApi\Api\AbstractApi;
@@ -8,18 +9,18 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class Lookup extends AbstractApi
 {
-
     /**
-     * Allowed site lookups
+     * Allowed site lookups.
      *
      * @var array
      */
     private static $allowedSites = ['tvrage', 'thetvdb', 'imdb'];
 
     /**
-     * Lookup show from tvrage id
+     * Lookup show from tvrage id.
      *
      * @param string $id
+     *
      * @return $this
      */
     public function setTvrageId($id)
@@ -28,9 +29,10 @@ class Lookup extends AbstractApi
     }
 
     /**
-     * Lookup show from thetvdb id
+     * Lookup show from thetvdb id.
      *
      * @param string $id
+     *
      * @return $this
      */
     public function setThetvbbId($id)
@@ -39,9 +41,10 @@ class Lookup extends AbstractApi
     }
 
     /**
-     * Lookup show from imdb id
+     * Lookup show from imdb id.
      *
      * @param string $id
+     *
      * @return $this
      */
     public function setImdbId($id)
@@ -50,29 +53,32 @@ class Lookup extends AbstractApi
     }
 
     /**
-     * Lookup show from other sources
+     * Lookup show from other sources.
      *
      * @param string $site
      * @param string $id
+     *
      * @return $this
      */
     public function setSite($site, $id)
     {
-        if (! in_array($site, self::$allowedSites)) {
+        if (!in_array($site, self::$allowedSites)) {
             throw new \InvalidArgumentException(
-                'Site can only be one of the following: ' . implode(', ', self::$allowedSites)
+                'Site can only be one of the following: '.implode(', ', self::$allowedSites)
             );
         }
 
         $this->options['id'] = $id;
         $this->options['site'] = $site;
+
         return $this;
     }
 
     /**
-     * Configure the allowed options
+     * Configure the allowed options.
      *
      * @param OptionsResolver $options
+     *
      * @return void
      */
     protected function configureOptions(OptionsResolver $options)
@@ -82,32 +88,36 @@ class Lookup extends AbstractApi
     }
 
     /**
-     * Generate the url from the options
+     * Generate the url from the options.
      *
      * @param array $options
+     *
      * @return string
      */
     protected function getUrl(array $options)
     {
         $url[$options['site']] = $options['id'];
+
         return sprintf('lookup/shows?%s', http_build_query($url));
     }
 
     /**
-     * Generate reponse from response interface
+     * Generate reponse from response interface.
      *
-     * @param array $options
+     * @param array             $options
      * @param ResponseInterface $response
+     *
      * @return ShowResponse
      */
     protected function generateResponse(array $options, ResponseInterface $response)
     {
         $response = $this->validateJson($response);
+
         return new ShowResponse($response, 'show');
     }
 
     /**
-     * Do the call
+     * Do the call.
      *
      * @return ShowResponse
      */

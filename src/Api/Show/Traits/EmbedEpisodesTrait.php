@@ -1,13 +1,13 @@
 <?php
+
 namespace Lsv\TvmazeApi\Api\Show\Traits;
 
 use Lsv\TvmazeApi\Api\Show\Embed\EmbedEpisodes;
 
 trait EmbedEpisodesTrait
 {
-
     /**
-     * Embed episodes in result
+     * Embed episodes in result.
      */
     public function embedEpisodes()
     {

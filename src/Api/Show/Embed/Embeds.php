@@ -1,11 +1,11 @@
 <?php
+
 namespace Lsv\TvmazeApi\Api\Show\Embed;
 
 class Embeds
 {
-
     /**
-     * Get embed classes
+     * Get embed classes.
      *
      * @return EmbedInterface[]
      */
@@ -13,7 +13,7 @@ class Embeds
     {
         return [
             EmbedEpisodes::class,
-            EmbedNextEpisode::class
+            EmbedNextEpisode::class,
         ];
     }
 }
