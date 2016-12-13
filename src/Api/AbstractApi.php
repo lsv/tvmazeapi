@@ -47,7 +47,7 @@ abstract class AbstractApi implements ApiInterface
      *
      * @var array
      */
-    protected $options;
+    protected $options = [];
 
     /**
      * The request

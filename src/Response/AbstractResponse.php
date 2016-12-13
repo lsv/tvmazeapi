@@ -26,10 +26,6 @@ abstract class AbstractResponse
      */
     protected function createResponse(array $response = null, $key = null)
     {
-        if (! $response) {
-            return ;
-        }
-
         if ($key !== null && isset($response[$key])) {
             $response = $response[$key];
         }
