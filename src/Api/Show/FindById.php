@@ -34,7 +34,6 @@ class FindById extends AbstractApi
     protected function configureOptions(OptionsResolver $options)
     {
         $options->setRequired('id');
-        $options->setAllowedTypes('id', 'int');
     }
 
     /**

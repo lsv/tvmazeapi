@@ -33,7 +33,6 @@ class Search extends AbstractApi
     protected function configureOptions(OptionsResolver $options)
     {
         $options->setRequired(['q']);
-        $options->addAllowedTypes('q', ['string']);
     }
 
     /**
