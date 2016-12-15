@@ -46,7 +46,10 @@ class FindById extends AbstractApi
      */
     protected function getUrl(array $options)
     {
-        return sprintf('shows/%d', $options['id']);
+        $id = $options['id'];
+        unset($options['id']);
+        $query = http_build_query($options);
+        return sprintf('shows/%d?%s', $id, $query);
     }
 
     /**
