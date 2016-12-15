@@ -19,18 +19,6 @@ class FindByIdTest extends AbstractApiTest
         $this->assertEquals($this->getUrl('shows/12345'), (string)$request->getUri());
     }
 
-    public function test_correct_url_notint()
-    {
-        $this->expectException(InvalidOptionsException::class);
-        $this->expectExceptionMessage(
-            'The option "id" with value "Hello World" is expected to be of type "int", but is of type "string".'
-        );
-
-        $api = new FindById();
-        $api->setId('Hello World');
-        $api->getRequest();
-    }
-
     public function test_result()
     {
         $api = new FindById($this->getClient(__DIR__ . '/SingleSearch/output/response.json'));
