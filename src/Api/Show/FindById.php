@@ -49,6 +49,7 @@ class FindById extends AbstractApi
         $id = $options['id'];
         unset($options['id']);
         $query = http_build_query($options);
+
         return sprintf('shows/%d?%s', $id, $query);
     }
 
