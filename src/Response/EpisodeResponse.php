@@ -43,6 +43,13 @@ class EpisodeResponse extends AbstractResponse
     public $airtime;
 
     /**
+     * Episode airdate with timezone
+     *
+     * @var \DateTime
+     */
+    public $airstamp;
+
+    /**
      * Episode runtime.
      *
      * @var int
@@ -64,5 +71,15 @@ class EpisodeResponse extends AbstractResponse
     protected function setAirdate($airdate)
     {
         $this->airdate = $this->textToDate($airdate);
+    }
+
+    /**
+     * Set air stamp
+     *
+     * @param string $airstamp
+     */
+    protected function setAirstamp($airstamp)
+    {
+        $this->airstamp = new \DateTime($airstamp);
     }
 }
