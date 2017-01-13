@@ -43,7 +43,7 @@ class EpisodeResponse extends AbstractResponse
     public $airtime;
 
     /**
-     * Episode airdate with timezone
+     * Episode airdate with timezone.
      *
      * @var \DateTime
      */
@@ -74,7 +74,7 @@ class EpisodeResponse extends AbstractResponse
     }
 
     /**
-     * Set air stamp
+     * Set air stamp.
      *
      * @param string $airstamp
      */
