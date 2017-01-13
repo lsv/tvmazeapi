@@ -72,7 +72,7 @@ abstract class AbstractApi implements ApiInterface
      *
      * @param Client|null $client
      * @param string|null $baseurl
-     * @param bool $secure
+     * @param bool        $secure
      */
     public function __construct(Client $client = null, $baseurl = null, $secure = true)
     {
