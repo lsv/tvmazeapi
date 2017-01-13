@@ -29,10 +29,16 @@ class Show
      */
     private $baseUrl;
 
-    private function __construct(ClientInterface $client = null, $baseUrl = null)
+    /**
+     * @var bool
+     */
+    private $secure;
+
+    private function __construct(ClientInterface $client = null, $baseUrl = null, $secure = true)
     {
         $this->client = $client;
         $this->baseUrl = $baseUrl;
+        $this->secure = $secure;
     }
 
     /**
@@ -53,14 +59,14 @@ class Show
      * Get instance.
      *
      * @param ClientInterface|null $client
-     * @param string|null          $baseUrl
-     *
+     * @param string|null $baseUrl
+     * @param bool $secure
      * @return Show
      */
-    public static function getInstance(ClientInterface $client = null, $baseUrl = null)
+    public static function getInstance(ClientInterface $client = null, $baseUrl = null, $secure = true)
     {
         if (self::$instance === null) {
-            self::$instance = new self($client, $baseUrl);
+            self::$instance = new self($client, $baseUrl, $secure);
         }
 
         return self::$instance;

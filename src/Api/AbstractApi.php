@@ -26,7 +26,7 @@ abstract class AbstractApi implements ApiInterface
     /**
      * Base url.
      */
-    const API_BASEURL = 'http://api.tvmaze.com/';
+    const API_BASEURL = '//api.tvmaze.com/';
 
     /**
      * HTTP Client.
@@ -62,15 +62,21 @@ abstract class AbstractApi implements ApiInterface
      * @var ResponseInterface
      */
     private $response;
+    /**
+     * @var bool
+     */
+    private $secure = true;
 
     /**
      * Create API request and response.
      *
      * @param Client|null $client
      * @param string|null $baseurl
+     * @param bool $secure
      */
-    public function __construct(Client $client = null, $baseurl = null)
+    public function __construct(Client $client = null, $baseurl = null, $secure = true)
     {
+        $this->secure = $secure;
         $this->setClient($client);
         $this->setBaseUrl($baseurl);
     }
@@ -96,8 +102,9 @@ abstract class AbstractApi implements ApiInterface
     public function setBaseUrl($url = null)
     {
         if ($url === null) {
-            $url = self::API_BASEURL;
+            $url = sprintf('http%s:%s', $this->secure ? 's' : '', self::API_BASEURL);
         }
+
         $this->baseurl = rtrim($url, '/');
     }
 

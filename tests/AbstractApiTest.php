@@ -12,11 +12,12 @@ abstract class AbstractApiTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @param string $url
+     * @param bool $secure
      * @return string
      */
-    protected function getUrl($url)
+    protected function getUrl($url, $secure = true)
     {
-        return sprintf('%s%s', AbstractApi::API_BASEURL, $url);
+        return sprintf('http%s:%s%s', $secure ? 's' : '', AbstractApi::API_BASEURL, $url);
     }
 
     /**
