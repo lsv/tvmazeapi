@@ -59,8 +59,9 @@ class Show
      * Get instance.
      *
      * @param ClientInterface|null $client
-     * @param string|null $baseUrl
-     * @param bool $secure
+     * @param string|null          $baseUrl
+     * @param bool                 $secure
+     *
      * @return Show
      */
     public static function getInstance(ClientInterface $client = null, $baseUrl = null, $secure = true)
