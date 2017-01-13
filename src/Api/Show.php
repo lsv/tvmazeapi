@@ -83,7 +83,7 @@ class Show
      */
     public function findById($id, $embedEpisodes = false, $embedNextepisode = false)
     {
-        $api = new Api\FindById($this->client, $this->baseUrl);
+        $api = new Api\FindById($this->client, $this->baseUrl, $this->secure);
         $api->setId($id);
         if ($embedEpisodes) {
             $api->embedEpisodes();
@@ -141,7 +141,7 @@ class Show
      */
     public function search($query)
     {
-        $api = new Api\Search($this->client, $this->baseUrl);
+        $api = new Api\Search($this->client, $this->baseUrl, $this->secure);
         $api->setQuery($query);
 
         return $api->call();
@@ -158,7 +158,7 @@ class Show
      */
     public function singleSearch($query, $embedEpisodes = false, $embedNextepisode = false)
     {
-        $api = new Api\SingleSearch($this->client, $this->baseUrl);
+        $api = new Api\SingleSearch($this->client, $this->baseUrl, $this->secure);
         $api->setQuery($query);
         if ($embedEpisodes) {
             $api->embedEpisodes();
@@ -181,7 +181,7 @@ class Show
      */
     private function lookup($site, $id)
     {
-        $api = new Api\Lookup($this->client, $this->baseUrl);
+        $api = new Api\Lookup($this->client, $this->baseUrl, $this->secure);
         $api->setSite($site, $id);
 
         return $api->call();
